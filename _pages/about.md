@@ -3,14 +3,14 @@ Hi, I'm Junlin Yang, a third-year Computer Science and Technology student, enrol
 I am actively seeking PhD opportunities for Fall 2026. Feel free to reach out if you're interested in my research, looking for collaboration, or just want to chat!
 
 **Research Interest**
-My research interests lie at the intersection of **Machine Learning** (focusing on \textbf{NLP}, \textbf{multimodal learning}, and \textbf{reinforcement learning}) and \textbf{Human-Computer Interaction} (particularly in \textbf{Human-AI Interaction}). Recently, these interests have crystallized into a core research question: \textit{How can we build embodied agents—especially computer agents—that excel in solving human tasks and collaborating effectively with people?}
+My research interests lie at the intersection of **Machine Learning** (focusing on **NLP**, **multimodal learning**, and **reinforcement learning**) and **Human-Computer Interaction** (particularly in **Human-AI Interaction**). Recently, these interests have crystallized into a core research question: *How can we build embodied agents—especially computer agents—that excel in solving human tasks and collaborating effectively with people?*
 
 Within this overarching question, I have explored or am eager to explore the following topics:
 
-1. \textbf{Building stronger embodied agents in real-world environments:}
+1. **Building stronger embodied agents in real-world environments:**
    For instance, in the case of computer agents, what constitutes the ideal training paradigm and agent framework? What is the optimal data strategy? How can techniques from social reinforcement learning and embodied reinforcement learning be leveraged to enhance agent capabilities?
    
-2. \textbf{Facilitating better Human-Agent interaction in open-world tasks:}
+2. **Facilitating better Human-Agent interaction in open-world tasks:**
    How can agents more effectively understand and respond to both explicit and implicit human goals? How can they improve their performance in following instructions and collaborating with humans?
    
 My ultimate aim is to guide technological development through insights derived from human and social behavior, enabling technology to better serve humanity and contribute meaningfully to society.
