@@ -12,7 +12,7 @@ Hi, I'm Junlin Yang, a third-year Computer Science and Technology student, enrol
 I am actively seeking PhD opportunities for Fall 2026. Feel free to reach out if you're interested in my research, looking for collaboration, or just want to chat!
 
 <div style="text-align: center;">
-   <img src="..\images\Res_interest.png" alt="替代文本" width="50%" height="50%"/>
+   <img src="..\images\Res_interest.png" alt="替代文本" width="75%" height="75%"/>
 </div>
 
 ## Research Interest
