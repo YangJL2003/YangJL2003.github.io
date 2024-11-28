@@ -11,9 +11,9 @@ Hi, I'm Junlin Yang, a third-year Computer Science and Technology student, enrol
 
 I am actively seeking PhD opportunities for Fall 2026. Feel free to reach out if you're interested in my research, looking for collaboration, or just want to chat!
 
-<!-- <div style="text-align: center;">
+<div style="text-align: center;">
    <img src="..\images\Res_interest.png" alt="替代文本" width="50%" height="50%"/>
-</div> -->
+</div>
 
 ## Research Interest
 My research interests lie at the intersection of **Machine Learning** (focusing on **NLP**, **multimodal learning**, and **reinforcement learning**) and **Human-Computer Interaction** (particularly in **Human-AI Interaction**). Recently, these interests have crystallized into a core research question: *How can we build embodied agents—especially computer agents—that excel in solving human tasks and collaborating effectively with people?*
