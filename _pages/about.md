@@ -1,3 +1,12 @@
+---
+permalink: /
+title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
 Hi, I'm Junlin Yang, a third-year Computer Science and Technology student, enrolled in 2022. Currently, I am fortunate to be a research intern at the [XLANG Lab](https://www.xlang.ai/) at The University of Hong Kong, under the guidance of Prof. [Tao Yu](https://taoyds.github.io/). In the past, I’ve had the privilege of interning at the [Tsinghua Pervasive HCI Group](https://pi.cs.tsinghua.edu.cn/), where I worked with Prof. [Chun Yu](https://pi.cs.tsinghua.edu.cn/lab/people/ChunYu/) and Prof. [Yuanchun Shi](https://risingstarsasia.org/speaker_detail.php?id=34).
 
 I am actively seeking PhD opportunities for Fall 2026. Feel free to reach out if you're interested in my research, looking for collaboration, or just want to chat!
