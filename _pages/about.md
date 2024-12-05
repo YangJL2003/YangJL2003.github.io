@@ -16,7 +16,9 @@ I am actively seeking PhD opportunities for **2026 Fall**. Feel free to reach ou
 </div>
 
 ## Research Interest
-My research interests lie at the intersection of **Machine Learning** (focusing on **NLP**, **multimodal learning**, and **reinforcement learning**) and **Human-Computer Interaction** (particularly in **Human-AI Interaction**). Recently, these interests have crystallized into a core research question: *How can we build embodied agents—especially computer agents—that excel in solving human tasks and collaborating effectively with people?*
+My research interests lie at the intersection of **Machine Learning** (focusing on **NLP**, **multimodal learning**, and **reinforcement learning**) and **Human-Computer Interaction** (particularly in **Human-AI Interaction**). Recently, these interests have crystallized into a core research question: 
+
+*How can we build embodied agents—especially computer agents—that excel in solving human tasks and collaborating effectively with people?*
 
 Within this overarching question, I have explored or am eager to explore the following topics:
 
@@ -34,29 +36,29 @@ My ultimate aim is to guide technological development through insights derived f
 *2024.7 - present*  
 *Advised by Prof. [Tao Yu](https://taoyds.github.io/), The University of Hong Kong*  
 
-- Proposed AgentNet, a diverse, challenging, and real-world dataset of computer usage scenarios aggregated from well-defined application contexts, inspired by Fei-Fei Li's ImageNet.
+- Proposed AgentNet, **a diverse, challenging, and real-world dataset** of computer usage scenarios aggregated from well-defined application contexts, inspired by Fei-Fei Li's ImageNet.
 - Designed an efficient and handy data collection system, incorporating algorithms to improve the efficiency of collecting computer usage data, guided by HCI design principles.
-- Training VLMs with this large volume of computer use data, exploring the scaling law of VLMs as computer use agents.
+- **Training VLMs** with this large volume of computer use data, exploring the scaling law of VLMs as computer use agents.
 - Analyze and process AgentNet data carefully to gain valuable insights from these long-horizon human-generated tasks.
 
 ### **VideoAgentTrek: Extract Agent Trajectories from Hindsight Videos**  
 *2024.7 - present*  
 *Advised by Prof. [Tao Yu](https://taoyds.github.io/), The University of Hong Kong*  
 
-- Enabled GUI agents to learn trajectories from online videos about computer use, inspired by OpenAI s Video PreTraining (VPT) methodology.
-- Trained an Inverse Dynamics Model (IDM) to transform unlabeled online tutorial videos into pretraining trajectory data for autonomous agents.
-- Pretrained a vision-language model(VLM) using large-scale data generated from online video.
+- Enabled GUI agents to **learn trajectories from online videos** about computer use, inspired by OpenAI s Video PreTraining (VPT) methodology.
+- **Trained an Inverse Dynamics Model (IDM)** to transform unlabeled online tutorial videos into pretraining trajectory data for autonomous agents.
+- **Pretrained a vision-language model(VLM)** using large-scale data generated from online video.
 
 ### **Neural Network App Traverser Empowered by Reinforcement Learning**  
 *2024.11 - present*  
 *Advised by Prof. [Tao Yu](https://taoyds.github.io/), The University of Hong Kong*  
 
-- Designed a reward mechanism to cost-effectively incentivize an agent to become an efficient computer interface traverser.  
-- Proposed an algorithmic framework that fine-tunes VLMs with RL for computer interface traverse tasks.
+- **Designed a reward mechanism** to cost-effectively incentivize an agent to become an efficient computer interface traverser.  
+- **Proposed an RL algorithmic framework** that fine-tunes VLMs with RL for computer interface traverse tasks.
 - Utilized the trained computer interface traverser agent to collect large-scale grounding data with minimal human effort.  
 - Designed experiments to investigate:
   - Whether an effective computer interface traverser agent can also be a competent computer task executor.  
-  - What core abilities a computer use agent needs to acquire to considerably improve its performance in instruction following.  
+  - **What core abilities** a computer use agent needs to acquire to considerably improve its performance in **instruction following**.  
 
 ### **EchoMind: Enhancing Group Discussions through Human-AI Collaborative Issue Mapping**  
 *2023.10 - 2024.9*  
@@ -80,6 +82,18 @@ My ultimate aim is to guide technological development through insights derived f
 - Crawled 8,495 news articles from sina.com from 2023.1 to 2023.8, and built an information retrieval system, using methods including inverted index, TF-IDF.
 - Discovered and categorized trending tech events, using TfidfVectorizer, k-means algorithm, and t-SNE algorithm.
 
+## Courses
+
+### GPA: 3.91/4.00
+
+### Selected courses over 4.0
+
+#### CS
+Introduction to Artificial Intelligence, Fundamentals of Computer Science, Foundation of Programming, Programming Training, Software Engineering, Computer Network, Formal Languages and Automata, Foundation of Object-Oriented Programming, Discrete Mathematics(2) etc.
+
+#### Math
+Probability Theory and Mathematical Statistic, Calculus A, Linear Algebra, Advanced topics in Linear Algebra, Introduction to Complex Analysis, University Physic etc.
+
 ## Awards and Honors
 
 - **Overall Excellence Scholarship**, Tsinghua University, 2024
@@ -99,15 +113,6 @@ My ultimate aim is to guide technological development through insights derived f
 - Experience in OpenRLHF, PyTorch, Sklearn
 - Programming languages: Python > C/C++ > system verilog
 
-
-## Selected course over 4.0
-### CS
-Introduction to Artificial Intelligence, Fundamentals of Computer Science, Foundation of Programming, Programming Training, Software Engineering, Computer Network, Formal Languages and Automata, Foundation of Object-Oriented Programming, Discrete Mathematics(2) etc.
-
-### Math
-Probability Theory and Mathematical Statistic, Calculus A, Linear Algebra, Advanced topics in Linear Algebra, Introduction to Complex Analysis, University Physic etc.
-
-
 ## Service and Leadership
 
 - **Class Monitor**, Tsinghua University, 2022.9 - 2023.9  
@@ -118,8 +123,12 @@ Probability Theory and Mathematical Statistic, Calculus A, Linear Algebra, Advan
   - The WeChat Official Account platform gained **over 50k reads** and **over 2.5k followers**
   - Disseminated comprehensive knowledge about university academic life to high school students from **diverse economic, family, and cognitive backgrounds**.
 
-## Other Interests
+## Miscs
 
+### Senior Mentors
+At Tsinghua, I was fortunate to meet some incredibly kind, talented, and supportive seniors, including [Yuxuan Li](https://hcii.cmu.edu/people/yuxuan-li) and [Zirui Cheng](https://chengzr01.github.io/#/home), who gave me my first real insight into the world of research. During my internship at HKU, I was lucky to work closely with [Tianbao Xie](https://tianbaoxie.com/) and [Yiheng Xu](https://yihengxu.com/), who patiently guided me step by step through agent-based and multimodal research and helped me gain a deeper understanding of academic life. I’m also grateful to have collaborated with [Xinyuan Wang](https://xinyuanwangcs.github.io/) and [Bowen Wang](https://bowenbryanwang.github.io/) on projects like AgentNet. I learned much from them, and together we created meaningful work.
+
+### Hobbies
 - **Athletics**: Tennis, Badminton, jogging
 - **Arts**: Music, film, reading
 
