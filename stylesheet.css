@@ -74,6 +74,18 @@ a:hover {
   text-decoration: none;
 }
 
+/* 作者名称专用样式 */
+.author-list a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.author-list a:focus,
+.author-list a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
 body,
 td,
 th,
