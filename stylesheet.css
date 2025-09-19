@@ -229,3 +229,8 @@ span.highlight {
     display: inline-block;
     border-radius: 10px;
 }
+
+/* Acceptance note color */
+.accept-note {
+  color: #ee9d06; /* teal-700: noticeable yet soft */
+}
