@@ -353,21 +353,15 @@ footer {
   text-transform: uppercase;
 }
 
-.visitor-badge {
+.clustrmaps-widget {
   display: inline-flex;
   line-height: 0;
 }
 
-.visitor-badge img {
+.clustrmaps-widget img {
   display: block;
-  width: auto;
-  height: 20px;
-}
-
-.visitor-counter canvas,
-.visitor-counter iframe,
-.visitor-counter img {
-  max-width: 160px !important;
+  width: min(300px, 100%);
+  height: auto;
 }
 
 .image-modal[hidden] {
