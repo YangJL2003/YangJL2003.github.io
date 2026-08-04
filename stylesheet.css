@@ -353,6 +353,17 @@ footer {
   text-transform: uppercase;
 }
 
+.visitor-badge {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.visitor-badge img {
+  display: block;
+  width: auto;
+  height: 20px;
+}
+
 .visitor-counter canvas,
 .visitor-counter iframe,
 .visitor-counter img {
