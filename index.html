@@ -7,7 +7,7 @@
     <meta name="description" content="Junlin Yang — PhD student at Tsinghua C3I Lab, studying scalable and self-evolving agents.">
     <title>Junlin Yang</title>
     <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="stylesheet.css?v=20260804-4">
+    <link rel="stylesheet" href="stylesheet.css?v=20260902-1">
   </head>
 
   <body>
@@ -240,11 +240,21 @@
       </section>
 
       <footer>
-        <div class="visitor-counter" aria-label="Visitor map">
+        <div class="visitor-counter" aria-label="Visitor statistics">
           <span class="visitor-label">🌍 Visitors</span>
-          <a class="clustrmaps-widget" href="https://clustrmaps.com/" aria-label="View ClustrMaps visitor statistics">
-            <img src="https://clustrmaps.com/map_v2.png?cl=ffffff&amp;w=300&amp;t=tt&amp;d=6QTYvlLs1zzwH51QFRdddYONtm_ttiIPtSRZ7G5Zz-o" alt="ClustrMaps visitor map">
+          <a class="visitor-stats" href="https://counterapi.com/stats/yangjl2003.github.io/view/home" target="_blank" rel="noopener" aria-label="View visitor trends">
+            <span class="visitor-stat">
+              <strong id="today-visits" aria-live="polite">—</strong>
+              <span>Today</span>
+            </span>
+            <span class="visitor-divider" aria-hidden="true"></span>
+            <span class="visitor-stat">
+              <strong id="total-visits" aria-live="polite">—</strong>
+              <span>Total</span>
+            </span>
           </a>
+          <a class="visitor-trend-link" href="https://counterapi.com/stats/yangjl2003.github.io/view/home" target="_blank" rel="noopener">View visit trend ↗</a>
+          <span class="visitor-status" id="visitor-status">Tracking restarted September 2026</span>
         </div>
         <p>
           The source code is inspired by <a href="https://jonbarron.info/">Jon Barron</a>.
@@ -290,6 +300,33 @@
       document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape' && !modal.hidden) closeModal();
       });
+
+      const visitorApi = 'https://counterapi.com/api/yangjl2003.github.io/view/home';
+      const todayVisits = document.getElementById('today-visits');
+      const totalVisits = document.getElementById('total-visits');
+      const visitorStatus = document.getElementById('visitor-status');
+
+      async function getVisitorCount(query) {
+        const response = await fetch(`${visitorApi}?${query}`, { cache: 'no-store' });
+        if (!response.ok) throw new Error('Visitor statistics request failed');
+        const data = await response.json();
+        if (!Number.isFinite(data.value)) throw new Error('Visitor statistics response was invalid');
+        return data.value.toLocaleString('en-US');
+      }
+
+      async function updateVisitorStats() {
+        try {
+          totalVisits.textContent = await getVisitorCount('unique=true&startNumber=0');
+          todayVisits.textContent = await getVisitorCount('readOnly=true&unique=true&timeline=1d&startNumber=0');
+        } catch (error) {
+          todayVisits.textContent = '—';
+          totalVisits.textContent = '—';
+          visitorStatus.textContent = 'Statistics temporarily unavailable';
+          visitorStatus.classList.add('error');
+        }
+      }
+
+      updateVisitorStats();
 
       const pet = document.getElementById('web-pet');
       const petButton = document.getElementById('pet-button');
