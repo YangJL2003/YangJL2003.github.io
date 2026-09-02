@@ -316,8 +316,8 @@
 
       async function updateVisitorStats() {
         try {
-          totalVisits.textContent = await getVisitorCount('unique=true&startNumber=0');
-          todayVisits.textContent = await getVisitorCount('readOnly=true&unique=true&timeline=1d&startNumber=0');
+          totalVisits.textContent = await getVisitorCount('unique=true&timeline=total&startNumber=0');
+          todayVisits.textContent = await getVisitorCount('readOnly=true&timeline=1d&startNumber=0');
         } catch (error) {
           todayVisits.textContent = '—';
           totalVisits.textContent = '—';
