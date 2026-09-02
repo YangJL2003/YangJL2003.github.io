@@ -306,8 +306,19 @@
       const totalVisits = document.getElementById('total-visits');
       const visitorStatus = document.getElementById('visitor-status');
 
-      async function getVisitorCount(query) {
-        const response = await fetch(`${visitorApi}?${query}`, { cache: 'no-store' });
+      function getShanghaiDateKey() {
+        const parts = new Intl.DateTimeFormat('en-US', {
+          timeZone: 'Asia/Shanghai',
+          year: 'numeric',
+          month: '2-digit',
+          day: '2-digit'
+        }).formatToParts(new Date());
+        const value = (type) => parts.find((part) => part.type === type).value;
+        return `${value('year')}-${value('month')}-${value('day')}`;
+      }
+
+      async function getVisitorCount(endpoint, query) {
+        const response = await fetch(`${endpoint}?${query}`, { cache: 'no-store' });
         if (!response.ok) throw new Error('Visitor statistics request failed');
         const data = await response.json();
         if (!Number.isFinite(data.value)) throw new Error('Visitor statistics response was invalid');
@@ -316,8 +327,9 @@
 
       async function updateVisitorStats() {
         try {
-          totalVisits.textContent = await getVisitorCount('unique=true&timeline=total&startNumber=0');
-          todayVisits.textContent = await getVisitorCount('readOnly=true&timeline=1d&startNumber=0');
+          const todayVisitorApi = `${visitorApi}-${getShanghaiDateKey()}`;
+          totalVisits.textContent = await getVisitorCount(visitorApi, 'unique=true&timeline=total&startNumber=0');
+          todayVisits.textContent = await getVisitorCount(todayVisitorApi, 'unique=true&timeline=total&startNumber=0');
         } catch (error) {
           todayVisits.textContent = '—';
           totalVisits.textContent = '—';
